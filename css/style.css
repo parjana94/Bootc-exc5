@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Plus+Jakarta+Sans:wght@500;700;800&family=Raleway:wght@400;700&display=swap");
+
+body {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Plus Jakarta Sans";
+  font-size: 14px;
+}
+
+.container {
+  width: 343px;
+  padding-top: 16px;
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo a {
+  text-decoration: none;
+  background: #13183f;
+  border-radius: 28px;
+  padding: 9px 24px 11px 24px;
+  text-transform: capitalize;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1em;
+  line-height: 28px;
+  transition: 0.5s;
+}
+.logo a:hover {
+  background-color: hsla(234, 25%, 52%, 1);
+}
+.head-section {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+.head-text-box {
+  padding-top: 12%;
+}
+
+.head-text-box h1 {
+  font-weight: 800;
+  font-size: 3em;
+  line-height: 50px;
+  color: hsla(234, 53%, 16%, 1);
+  padding-bottom: 25px;
+}
+.head-text-box p {
+  font-weight: 500;
+  font-size: 1.1em;
+  line-height: 26px;
+  color: hsla(233, 10%, 56%, 1);
+  padding-bottom: 24px;
+}
+.head-text-box a {
+  text-decoration: none;
+  text-transform: capitalize;
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  border-radius: 31.5px;
+  padding: 15px 37px;
+  font-weight: 700;
+  font-size: 1.1em;
+  line-height: 26px;
+  color: white;
+  transition: 0.5s;
+}
+.head-text-box a:hover {
+  opacity: 0.5;
+}
+.hero-img-mobile {
+  width: 100%;
+}
+.hero-img-tablet {
+  display: none;
+}
+.hero-img-desktop {
+  display: none;
+}
+/* main section */
+.check h2 {
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  border-radius: 10px;
+  padding: 24px 29px 32px 28px;
+  font-weight: 800;
+  font-size: 1.8em;
+  line-height: 32px;
+  color: white;
+}
+.boxes {
+  display: grid;
+  grid-gap: 50px;
+}
+.check {
+  padding-bottom: 10px;
+}
+.box {
+  background-color: white;
+  padding: 0 28px 32px 28px;
+  position: relative;
+}
+.box img {
+  position: absolute;
+  top: -12%;
+}
+.box h2 {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 25px;
+  color: #13183f;
+  padding-bottom: 16px;
+  padding-top: 60px;
+}
+.box p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: hsla(233, 10%, 56%, 1);
+  padding-bottom: 24px;
+}
+.box a {
+  color: hsla(341, 92%, 62%, 1);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  transition: 0.5s;
+}
+.box a:hover {
+  color: hsla(341, 100%, 83%, 1);
+}
+
+footer {
+  background-color: hsla(234, 53%, 16%, 1);
+  margin-top: 80px;
+  min-width: 100%;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  background: linear-gradient(180deg, #4851ff 0%, #f02aa6 100%);
+  border-radius: 28px;
+  padding: 9px 24px 11px 24px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: white;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.5s;
+}
+footer a:hover {
+  background: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+  border-radius: 28px;
+}
+.foot-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 690px;
+  }
+  .head-section {
+    flex-direction: row;
+    gap: 0px;
+    overflow-x: hidden;
+  }
+  .hero-img-mobile {
+    display: none;
+  }
+  .hero-img {
+    position: relative;
+    height: 500px;
+  }
+  .hero-img-tablet {
+    display: block;
+    height: 600px;
+    position: relative;
+    top: -22%;
+    right: -10%;
+  }
+  .head-text-box {
+    min-width: 45%;
+  }
+  main {
+    margin-top: 100px;
+  }
+  .boxes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .check h2 {
+    padding: 56px 21px 139px 32px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1110px;
+  }
+  .boxes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .hero-img-tablet {
+    display: none;
+  }
+  .hero-img {
+    overflow: hidden;
+  }
+  .hero-img-desktop {
+    display: block;
+    width: 150%;
+    height: 600px;
+    position: relative;
+    top: -22%;
+    right: -10%;
+  }
+}
